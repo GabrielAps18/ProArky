@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<<<<<<< HEAD
   <link rel="icon" type="image/png" href="css/png/">
   <link rel="stylesheet" type="text/css" media="screen" href="css/estilos.css">
   <link rel="stylesheet" type="text/css" media="screen" href="css/uikit css/uikit-rtl.css">
@@ -15,16 +14,6 @@
   <script src="js/js.js"></script>
 
   <title>ProArky | INICIO</title>
-=======
-  <title>ProArky</title>
-  <link rel="stylesheet" href="uikit\dist\css\uikit-rtl.css">
-  <link rel="stylesheet" href="uikit\dist\css\uikit-rtl.min.css">
-  <link rel="stylesheet" href="uikit\dist\css\uikit.css">
-  <link rel="stylesheet" href="uikit\dist\css\uikit.min.css">
-<<<<<<< HEAD
->>>>>>> master
-=======
->>>>>>> master
 </head>
 
 <body>
@@ -32,28 +21,77 @@
     <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;">
       <div class="uk-navbar-left">
 
-        <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#"></a>
+        <a class="uk-navbar-toggle" href="#" uk-toggle="target: #offcanvas-nav">
+          <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left"></span>
+        </a>
         <a class="uk-navbar-item uk-logo" href="#">ProArky</a>
 
         <ul class="uk-navbar-nav">
           <li class="uk-active"><a href="#inicio">Inicio</a></li>
           <li>
             <a href="#">Servicios</a>
-            <div class="uk-navbar-dropdown">
-              <ul class="uk-nav uk-navbar-dropdown-nav">
-                <li class="uk-active"><a href="#">Active</a></li>
-                <li><a href="#">Item</a></li>
-                <li><a href="#">Item</a></li>
-              </ul>
+            <div class="uk-navbar-dropdown" uk-drop="boundary: !nav; boundary-align: true; pos: bottom-justify;">
+              <div class="uk-navbar-dropdown-grid uk-child-width-1-2" uk-grid>
+                <div>
+                  <ul class="uk-nav uk-navbar-dropdown-nav">
+                    <li class="uk-active"><a href="#">Active</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li class="uk-nav-header">Header</li>
+                    <li><a href="#">Item</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="#">Item</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <ul class="uk-nav uk-navbar-dropdown-nav">
+                    <li class="uk-active"><a href="#">Active</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li class="uk-nav-header">Header</li>
+                    <li><a href="#">Item</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="#">Item</a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
+          </li>
           </li>
           <li><a href="#">Contáctanos</a></li>
         </ul>
 
       </div>
     </nav>
-  </div>
-  <h1>Se dice Hello world</h1>
+    <div id="offcanvas-nav" uk-offcanvas="overlay: true">
+      <div class="uk-offcanvas-bar">
+        <ul class="uk-nav uk-nav-default">
+          <li><a href="index.html"><span class="uk-margin-small-right" uk-icon="icon: home"></span>INICIO</a></li>
+          <li class="uk-nav-divider"></li>
+          <li class="uk-parent">
+          <li class="uk-nav-header">SECCION</li>
+          <ul class="uk-nav-sub">
+            <li><a href="lunchtime.html"><span class="uk-margin-small-right uk-padding-small"
+                  uk-icon="icon: check"></span>ITEM</a>
+            </li>
+            <li><a href="reportes.html#t1"><span class="uk-margin-small-right uk-padding-small"
+                  uk-icon="icon: check"></span>ITEM</a>
+            </li>
+            <li><a href="informes.html"><span class="uk-margin-small-right uk-padding-small"
+                  uk-icon="icon: check"></span>ITEM</a>
+            </li>
+            <li><a href="personal.html"><span class="uk-margin-small-right uk-padding-small"
+                  uk-icon="icon: check"></span>ITEM</a>
+            </li>
+          </ul>
+          </li>
+          <li class="uk-nav-header">SECCION</li>
+          <li><a href="#"><span class="uk-margin-small-right uk-padding-small" uk-icon="icon: unlock"></span>ITEM</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <h1>Se dice Hello world</h1>
 </body>
 
 </html>
