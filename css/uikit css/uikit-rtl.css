@@ -4050,6 +4050,7 @@ ul.uk-nav-sub {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
   text-decoration: none;
+  color: #f8b500;
 }
 /*
  * Nav items
@@ -4067,7 +4068,8 @@ ul.uk-nav-sub {
 .uk-navbar-nav > li:hover > a,
 .uk-navbar-nav > li > a:focus,
 .uk-navbar-nav > li > a.uk-open {
-  color: #3288c6;
+  color: #fafafa;
+  background-color: #f8b500;
   outline: none;
 }
 /* OnClick */
@@ -4079,7 +4081,7 @@ ul.uk-nav-sub {
   color: #fafafa;
 }
 .uk-navbar-nav > li.uk-active > a:hover {
-  color: #3288c6;
+  color: #fafafa;
 }
 /* Item
  ========================================================================== */
@@ -4089,12 +4091,12 @@ ul.uk-nav-sub {
 /* Toggle
  ========================================================================== */
 .uk-navbar-toggle {
-  color: #999;
+  color: #fafafa;
 }
 .uk-navbar-toggle:hover,
 .uk-navbar-toggle:focus,
 .uk-navbar-toggle.uk-open {
-  color: #666;
+  color: #f8b500;
   outline: none;
   text-decoration: none;
 }
@@ -8096,7 +8098,7 @@ iframe.uk-cover {
 /* Hover + Focus */
 .uk-logo:hover,
 .uk-logo:focus {
-  color: #3288c6;
+  color: #f8b500;
   outline: none;
   /* 1 */
   text-decoration: none;
@@ -8804,7 +8806,7 @@ iframe.uk-cover {
 [class*='uk-position-right'],
 [class*='uk-position-left'],
 [class*='uk-position-center'] {
-  position: absolute !important;
+  position: relative !important;
 }
 /* Edges
  ========================================================================== */
@@ -8863,7 +8865,7 @@ iframe.uk-cover {
 /* Vertical */
 [class*='uk-position-center-right'],
 [class*='uk-position-center-left'] {
-  top: 40vh;
+  top: 50vh;
   transform: translateY(-50%);
 }
 .uk-position-center-right {

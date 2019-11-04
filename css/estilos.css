@@ -9,6 +9,10 @@
   background-repeat: no-repeat;
 }
 
+.uk-navbar-nav > li #inicio {
+  background-color: #f8b500;
+}
+
 .titulo{
   padding-left: 50px;
 }
@@ -16,8 +20,7 @@
 .titulo > h1{
   color: #fafafa;
   font-weight: bolder;
-  font-size: 12em;
-  text-align: center;
+  font-size: 10em;
   letter-spacing: 4px;
   position: relative;
   text-transform: capitalize;
@@ -50,6 +53,9 @@
   font-size: 15px;
   padding: 5px 15px;
   font-weight: bold;
+}
+.titulo button:hover{
+  background-color: #e3b04b;
 }
 
 .titulo > .hq{
