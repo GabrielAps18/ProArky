@@ -1,5 +1,5 @@
 #inicio {
-  background: url(imagenes/ppp.jpg) no-repeat;
+  background: url(imagenes/b3.jpg) no-repeat;
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -7,4 +7,68 @@
   overflow: hidden;
   position: relative;
   background-repeat: no-repeat;
+}
+
+.titulo > h1{
+  color: #fafafa;
+  font-weight: bolder;
+  font-size: 12em;
+  text-align: center;
+  letter-spacing: 4px;
+  position: relative;
+  text-transform: capitalize;
+  font-family: 'Noto Sans', sans-serif;
+  padding-left: 10px;
+}
+
+.titulo > span{
+  text-shadow: 1px 1px #272727;
+  color: #fafafa;
+  font-weight: lighter;
+  font-size: 2em;
+  text-align: center;
+  letter-spacing: 4px;
+  position: relative;
+  text-transform: capitalize;
+  padding-left: 10px;
+}
+
+.infotitulo{
+  width: 500px;
+  color: #fafafa86;
+  padding-left: 15px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.titulo > button{
+  background-color: #f8b500;
+  margin: 100px 30px 0 30px;
+  font-size: 15px;
+  padding: 5px 15px;
+  font-weight: bold;
+}
+
+.titulo > .hq{
+  color: #f8b500;
+}
+
+@media screen and (min-width: 320px) and (max-width: 840px){
+  .titulo > h1{
+    font-size: 6em;
+  }
+  .titulo > span{
+    font-size: 1em;
+
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 840px){
+  .nav-logo{
+    font-size: 1em;
+  }
+  .navbar > li{
+    font-size: 1em;
+
+  }
 }

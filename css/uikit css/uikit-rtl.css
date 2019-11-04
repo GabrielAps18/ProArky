@@ -3929,11 +3929,17 @@ ul.uk-nav-sub {
   position: relative;
   
 }
+
+.uk-navbar:hover{
+  background: #fafafa;
+
+}
 /* Container
  ========================================================================== */
 .uk-navbar-container:not(.uk-navbar-transparent) {
-  background: #f6f6f602;
+  background: #fafafa00;
 }
+
 /*
  * Remove pseudo elements created by micro clearfix as precaution (if Container component is used)
  */
@@ -4038,9 +4044,9 @@ ul.uk-nav-sub {
   /* 2 */
   box-sizing: border-box;
   min-height: 80px;
-  padding: 0 15px;
+  padding: 0 20px;
   /* 3 */
-  font-size: 0.875rem;
+  font-size: 1.5rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
   text-decoration: none;
@@ -4049,7 +4055,7 @@ ul.uk-nav-sub {
  * Nav items
  */
 .uk-navbar-nav > li > a {
-  color: #3288c6;
+  color: #fafafa;
   text-transform: uppercase;
   transition: 0.1s ease-in-out;
   transition-property: color, background-color;
@@ -4061,7 +4067,7 @@ ul.uk-nav-sub {
 .uk-navbar-nav > li:hover > a,
 .uk-navbar-nav > li > a:focus,
 .uk-navbar-nav > li > a.uk-open {
-  color: #666;
+  color: #3288c6;
   outline: none;
 }
 /* OnClick */
@@ -4070,6 +4076,9 @@ ul.uk-nav-sub {
 }
 /* Active */
 .uk-navbar-nav > li.uk-active > a {
+  color: #fafafa;
+}
+.uk-navbar-nav > li.uk-active > a:hover {
   color: #3288c6;
 }
 /* Item
@@ -8078,16 +8087,16 @@ iframe.uk-cover {
  * 1. Required for `a`
  */
 .uk-logo {
-  font-size: 1.5rem;
+  font-size: 3.5rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  color: #272727;
+  color: #fafafa;
   /* 1 */
   text-decoration: none;
 }
 /* Hover + Focus */
 .uk-logo:hover,
 .uk-logo:focus {
-  color: #666;
+  color: #3288c6;
   outline: none;
   /* 1 */
   text-decoration: none;
@@ -8843,7 +8852,7 @@ iframe.uk-cover {
  * 1. Fix text wrapping if content is larger than 50% of the container.
  */
 .uk-position-center {
-  top: 50%;
+  top: 50vh;
   right: 50%;
   transform: translate(50%, -50%);
   /* 1 */
@@ -8854,7 +8863,7 @@ iframe.uk-cover {
 /* Vertical */
 [class*='uk-position-center-right'],
 [class*='uk-position-center-left'] {
-  top: 50%;
+  top: 40vh;
   transform: translateY(-50%);
 }
 .uk-position-center-right {
