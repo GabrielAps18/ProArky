@@ -1,0 +1,10 @@
+#inicio {
+  background: url(imagenes/ppp.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-repeat: no-repeat;
+}
