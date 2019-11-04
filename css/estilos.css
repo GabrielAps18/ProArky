@@ -9,6 +9,10 @@
   background-repeat: no-repeat;
 }
 
+.titulo{
+  padding-left: 50px;
+}
+
 .titulo > h1{
   color: #fafafa;
   font-weight: bolder;
@@ -18,7 +22,6 @@
   position: relative;
   text-transform: capitalize;
   font-family: 'Noto Sans', sans-serif;
-  padding-left: 10px;
 }
 
 .titulo > span{
@@ -43,7 +46,7 @@
 
 .titulo > button{
   background-color: #f8b500;
-  margin: 100px 30px 0 30px;
+  margin: 100px;
   font-size: 15px;
   padding: 5px 15px;
   font-weight: bold;
