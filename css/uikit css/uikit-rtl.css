@@ -8808,6 +8808,9 @@ iframe.uk-cover {
 [class*='uk-position-center'] {
   position: relative !important;
 }
+.uk-position-center{
+  position: relative;
+}
 /* Edges
  ========================================================================== */
 /* Don't use `width: 100%` because it is wrong if the parent has padding. */

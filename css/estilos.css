@@ -7,7 +7,17 @@
   overflow: hidden;
   position: relative;
   background-repeat: no-repeat;
+  animation: shrink 10s infinite alternate;
 }
+@keyframes shrink {
+  0% {
+    background-size: 150% 150%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+
 
 .uk-navbar-nav > li #inicio {
   background-color: #f8b500;
@@ -15,6 +25,7 @@
 
 .titulo{
   padding-left: 50px;
+  position: relative;
 }
 
 .titulo > h1{
@@ -82,7 +93,7 @@
   }
 }
 .aboutus{
-
+ color: #fafafa;
 }
 .primerparrafo{
   font-size: 15px;
