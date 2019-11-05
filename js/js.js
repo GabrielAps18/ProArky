@@ -4,7 +4,8 @@ $(document).ready(function() {
     	$('.uk-navbar').css({
         'background-color': '#f8f8f8',
         'transition': 'all ease .5s',
-        'height': '100px'
+        'height': '100px',
+        'color': '#303030'
         });
     }
     else {
@@ -16,7 +17,3 @@ $(document).ready(function() {
     }
   });
 });
-
-function modalhide(){
-  UIkit.modal(element).hide();
-}

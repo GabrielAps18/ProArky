@@ -2972,9 +2972,10 @@ select.uk-form-width-xsmall {
  * Secondary
  */
 .uk-card-secondary {
-  background: #222;
+  background: rgba(34, 34, 34, 0);
   color: #fff;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  border: 1px solid #505050;
 }
 .uk-card-secondary .uk-card-title {
   color: #fff;

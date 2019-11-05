@@ -1,3 +1,11 @@
+body{
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+
 #inicio {
   background: url(imagenes/b3.jpg) no-repeat;
   background-position: center;
@@ -101,4 +109,22 @@ color: #424949;
   font-size: 15px;
   color: #424949;
   font-family: 'Raleway', sans-serif;
+}
+
+.box-100x70{
+  width: 100vw;
+  margin: 20vh 0 20vh 0;
+}
+ .cards{
+   padding-top: 0%;
+   margin-top: 0%;
+   width: 100%;
+   background-color: #303030;
+   padding-bottom: 5vh;
+ }
+
+
+.cards > .uk-card{
+  background-color: none;
+  border: 1px solid #505050;
 }
