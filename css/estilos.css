@@ -94,6 +94,10 @@
 }
 .aboutus{
  color: #fafafa;
+.aboutustittle{
+font-size: 25px;
+font-family: 'Roboto', sans-serif;
+color: #424949;
 }
 .primerparrafo{
   font-size: 15px;
