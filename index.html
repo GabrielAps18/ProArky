@@ -13,23 +13,24 @@
   <script src="js/uikit js/uikit-icons.js"></script>
   <script src="js/jquery.js"></script>
   <script src="js/js.js"></script>
-
   <title>ProArky | INICIO</title>
 </head>
 
 <body>
+
   <section id="inicio">
 
     <div
       uk-sticky="sel-target: navbar .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
-      <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;">
-        <div class="uk-navbar-left">
 
+      <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;">
+
+        <div class="uk-navbar-left">
           <a class="uk-navbar-toggle" href="#" uk-toggle="target: #offcanvas-nav">
-            <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left"></span>
-          </a>
+            <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left"></span></a>
           <a class="uk-navbar-item uk-logo" href="#" style="font-family: 'Noto Sans', sans-serif;">ProArky</a>
         </div>
+
         <div class="uk-navbar-right">
           <ul class="uk-navbar-nav">
             <li class="uk-active"><a href="#inicio">Inicio</a></li>
@@ -39,23 +40,19 @@
                 <div class="uk-navbar-dropdown-grid uk-child-width-1-2" uk-grid>
                   <div>
                     <ul class="uk-nav uk-navbar-dropdown-nav">
-                      <li class="uk-active"><a href="#">Active</a></li>
-                      <li><a href="#">Item</a></li>
-                      <li class="uk-nav-header">Header</li>
-                      <li><a href="#">Item</a></li>
-                      <li><a href="#">Item</a></li>
+                      <li class="uk-nav-header">Servicios de ****</li>
                       <li class="uk-nav-divider"></li>
+                      <li><a href="#">Item</a></li>
+                      <li><a href="#">Item</a></li>
                       <li><a href="#">Item</a></li>
                     </ul>
                   </div>
                   <div>
                     <ul class="uk-nav uk-navbar-dropdown-nav">
-                      <li class="uk-active"><a href="#">Active</a></li>
-                      <li><a href="#">Item</a></li>
-                      <li class="uk-nav-header">Header</li>
-                      <li><a href="#">Item</a></li>
-                      <li><a href="#">Item</a></li>
+                      <li class="uk-nav-header">Servicios de ****</li>
                       <li class="uk-nav-divider"></li>
+                      <li><a href="#">Item</a></li>
+                      <li><a href="#">Item</a></li>
                       <li><a href="#">Item</a></li>
                     </ul>
                   </div>
@@ -65,50 +62,123 @@
             </li>
             <li><a href="#">Contáctanos</a></li>
           </ul>
-
         </div>
       </nav>
+
       <div id="offcanvas-nav" uk-offcanvas="overlay: true">
+
         <div class="uk-offcanvas-bar">
           <ul class="uk-nav uk-nav-default">
-            <li><a href="index.html"><span class="uk-margin-small-right" uk-icon="icon: home"></span>INICIO</a></li>
+            <li><a href="#inicio"><span class="uk-margin-small-right" uk-icon="icon: home"></span>INICIO</a></li>
             <li class="uk-nav-divider"></li>
             <li class="uk-parent">
-            <li class="uk-nav-header">SECCION</li>
+            <li class="uk-nav-header">SECCIONES</li>
             <ul class="uk-nav-sub">
-              <li><a href="lunchtime.html"><span class="uk-margin-small-right uk-padding-small"
-                    uk-icon="icon: check"></span>ITEM</a>
+              <li><a href=""><span class="uk-margin-small-right uk-padding-small" uk-icon="icon: check"></span>Acerca de
+                  nosotros</a>
               </li>
-              <li><a href="reportes.html#t1"><span class="uk-margin-small-right uk-padding-small"
-                    uk-icon="icon: check"></span>ITEM</a>
+              <li><a href=""><span class="uk-margin-small-right uk-padding-small" uk-icon="icon: check"></span>Nuestro
+                  enfoque</a>
               </li>
-              <li><a href="informes.html"><span class="uk-margin-small-right uk-padding-small"
-                    uk-icon="icon: check"></span>ITEM</a>
+              <li><a href=""><span class="uk-margin-small-right uk-padding-small" uk-icon="icon: check"></span>Nuestros
+                  productos y servicios</a>
               </li>
-              <li><a href="personal.html"><span class="uk-margin-small-right uk-padding-small"
-                    uk-icon="icon: check"></span>ITEM</a>
+              <li><a href=""><span class="uk-margin-small-right uk-padding-small"
+                    uk-icon="icon: check"></span>Reseñas</a>
+              </li>
+              <li><a href=""><span class="uk-margin-small-right uk-padding-small"
+                    uk-icon="icon: check"></span>Contáctanos</a>
               </li>
             </ul>
             </li>
-            <li class="uk-nav-header">SECCION</li>
-            <li><a href="#"><span class="uk-margin-small-right uk-padding-small" uk-icon="icon: unlock"></span>ITEM</a>
+            <li class="uk-nav-header">INFORMACIÓN Y CONTACTOS</li> <br><br>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora aliquam adipisci corporis, provident
+              cumque magnam sed quae nihil, reprehenderit molestias modi natus harum impedit maxime eligendi quidem
+              officiis! Tempore, beatae.</span> <br><br><br>
+            <li><a class="uk-button uk-button-default" href="#modal-overflow" uk-toggle>Envíanos un mensaje!</a>
             </li>
           </ul>
         </div>
+
       </div>
 
+
+      <div id="modal-overflow" uk-modal>
+        <div class="uk-modal-dialog">
+
+          <button class="uk-modal-close-default" type="button" uk-close></button>
+
+          <div class="uk-modal-header">
+            <h2 class="uk-modal-title" style="text-align: center;">¿Qué necesitas?</h2>
+          </div>
+
+          <div class="uk-modal-body" uk-overflow-auto>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat.</p>
+
+            <form>
+              <div class="uk-margin">
+                <div class="uk-inline">
+                  <span class="uk-form-icon" uk-icon="icon: user"></span>
+                  <input class="uk-input uk-form-width-large" type="text" placeholder="Nombre y Apellidos">
+                </div>
+              </div>
+
+              <div class="uk-margin">
+                <div class="uk-inline">
+                  <span class="uk-form-icon" uk-icon="icon: receiver"></span>
+                  <input class="uk-input uk-form-width-large" type="text" placeholder="Teléfono">
+                </div>
+              </div>
+
+              <div class="uk-margin">
+                <div class="uk-inline">
+                  <span class="uk-form-icon" uk-icon="icon: google"></span>
+                  <input class="uk-input uk-form-width-large" type="text" placeholder="Email">
+                </div>
+              </div>
+
+              <div class="uk-margin">
+                <textarea class="uk-textarea" rows="5" placeholder="Mensaje"></textarea>
+              </div>
+            </form>
+
+          </div>
+
+          <div class="uk-modal-footer uk-text-right">
+            <button class="uk-button uk-button-default uk-modal-close" type="button">Cancelar</button>
+            <button class="uk-button uk-button-primary" type="button">Enviar</button>
+          </div>
+
+        </div>
+      </div>
+
+
       <div class="titulo uk-position-center-left">
+
         <h1>PROARKY</h1>
+
         <span>Creamos proyectos de</span> <span class="hq">Alto Rendimiento</span> <br> <br>
+
         <div class="infotitulo">
           <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae explicabo quia impedit neque
             quaerat, sint corrupti iure, reprehenderit adipisci, dignissimos rem. Sit consequatur nam, quibusdam enim
             soluta assumenda est culpa!</span>
         </div>
+
         <button class="uk-button uk-button-primary">Conoce más!</button>
+
       </div>
 
-     
+
+  </section>
+  <section id="servicios">
+
+
+
+
   </section>
 </body>
 
