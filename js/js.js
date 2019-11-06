@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	$(window).scroll(function() {
-  	if($(document).scrollTop() > 700) {
+  	if($(document).scrollTop() > 480) {
     	$('.uk-navbar').css({
         'background-color': '#303030',
         'transition': 'all ease .5s',
