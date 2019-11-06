@@ -132,3 +132,10 @@ color: #424949;
 .padding{
   padding: 0 15%;
 }
+.filtro > .uk-subnav-pill > .uk-active > a {
+  background-color: #f8b500;
+}
+.filtrocard > .uk-card-default {
+  background-color: #303030;
+  color: #f8f8f8;
+}
