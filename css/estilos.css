@@ -30,6 +30,9 @@ body{
 .uk-navbar-nav > li #inicio {
   background-color: #f8b500;
 }
+.textcolornav{
+  color: #f8f8f8;
+}
 
 .titulo{
   padding-left: 50px;
