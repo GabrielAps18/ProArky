@@ -617,7 +617,7 @@ a.uk-link-reset,
   /* 3 */
   height: calc(4px + 0.7em);
   margin-left: calc(5px + 0.2em);
-  border-right: calc(5px + 0.1em) solid #e5e5e5;
+  border-right: calc(5px + 0.1em) solid #f8b500;
 }
 /* Line
  ========================================================================== */
@@ -2956,7 +2956,7 @@ select.uk-form-width-xsmall {
  * Primary
  */
 .uk-card-primary {
-  background: #1e87f0;
+  background: #f8b500;
   color: #fff;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
@@ -2964,7 +2964,7 @@ select.uk-form-width-xsmall {
   color: #fff;
 }
 .uk-card-primary.uk-card-hover:hover {
-  background-color: #1e87f0;
+  background-color: #faa05a;
   box-shadow: 0 14px 25px rgba(0, 0, 0, 0.16);
 }
 /*
