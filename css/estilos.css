@@ -1,4 +1,4 @@
-body{
+body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
@@ -14,29 +14,32 @@ body{
   background-repeat: no-repeat;
   animation: shrink 10s infinite alternate;
 }
+
 @keyframes shrink {
   0% {
     background-size: 150% 150%;
   }
+
   100% {
     background-size: 100% 100%;
   }
 }
 
 
-.uk-navbar-nav > li #inicio {
+.uk-navbar-nav>li #inicio {
   background-color: #f8b500;
 }
-.textcolornav{
+
+.textcolornav {
   color: #f8f8f8;
 }
 
-.titulo{
+.titulo {
   padding-left: 50px;
   position: relative;
 }
 
-.titulo > h1{
+.titulo>h1 {
   color: #fafafa;
   font-weight: bolder;
   font-size: 10em;
@@ -46,7 +49,7 @@ body{
   font-family: 'Noto Sans', sans-serif;
 }
 
-.titulo > span{
+.titulo>span {
   text-shadow: 1px 1px #272727;
   color: #fafafa;
   font-weight: lighter;
@@ -58,7 +61,7 @@ body{
   padding-left: 10px;
 }
 
-.infotitulo{
+.infotitulo {
   width: 500px;
   color: #fafafa86;
   padding-left: 15px;
@@ -66,76 +69,275 @@ body{
   text-transform: uppercase;
 }
 
-.titulo > button{
+.titulo>button {
   background-color: #f8b500;
   margin: 100px;
   font-size: 15px;
   padding: 5px 15px;
   font-weight: bold;
 }
-.titulo button:hover{
+
+.titulo button:hover {
   background-color: #e3b04b;
 }
 
-.titulo > .hq{
+.titulo>.hq {
   color: #f8b500;
 }
 
-@media screen and (min-width: 320px) and (max-width: 840px){
-  .titulo > h1{
+@media screen and (min-width: 320px) and (max-width: 840px) {
+  .titulo>h1 {
     font-size: 6em;
   }
-  .titulo > span{
+
+  .titulo>span {
     font-size: 1em;
 
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 840px){
-  .nav-logo{
+@media screen and (min-width: 320px) and (max-width: 840px) {
+  .nav-logo {
     font-size: 1em;
   }
-  .navbar > li{
+
+  .navbar>li {
     font-size: 1em;
 
   }
 }
+
 .aboutustittle {
-font-size: 25px;
-font-family: 'Roboto', sans-serif;
-color: #424949;
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+  color: #424949;
 }
+
 .primerparrafo {
   font-size: 15px;
   color: #424949;
   font-family: 'Raleway', sans-serif;
 }
 
-.box-100x70{
+.box-100x70 {
   width: 100vw;
   margin: 20vh 0;
 }
- .cards{
-   padding-top: 0%;
-   margin-top: 0%;
-   width: 100%;
-   background-color: #303030;
-   padding-bottom: 5vh;
- }
+
+.cards {
+  padding-top: 0%;
+  margin-top: 0%;
+  width: 100%;
+  background-image: url(imagenes/pie.jpg);
+  padding-bottom: 5vh;
+}
 
 
-.cards > .uk-card{
+.cards>.uk-card {
   background-color: none;
   border: 1px solid #505050;
 }
 
-.padding{
+.padding {
   padding: 0 15%;
 }
-.filtro > .uk-subnav-pill > .uk-active > a {
+
+.filtro>.uk-subnav-pill>.uk-active>a {
   background-color: #f8b500;
 }
-.filtrocard > .uk-card-default {
+
+.filtrocard>.uk-card-default {
   background-color: #303030;
   color: #f8f8f8;
+}
+
+
+/*-----------servicios-----------------*/
+
+
+.services {
+  background: none;
+  text-align: center;
+}
+
+.cen {
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.service {
+  display: inline-block;
+  width: calc(100% / 3);
+  margin: 0 -2px;
+  padding: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.service:hover {
+  background: #e3b04b;
+}
+
+.service i {
+  color: #f8b500;
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+
+.service h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 0;
+  color: #fafafa;
+}
+
+.service p {
+  color: #fafafa86;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 800px) {
+  .service {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .service {
+    width: 100%;
+  }
+}
+
+
+/*----------------------------------*/
+
+.container{
+  position: relative;
+  width: 60vw;
+  height: 70vh;
+  margin: auto;
+}
+/*-----------------------------------*/
+
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
+
+*,
+html {
+    padding: 0;
+    margin: 0;
+}
+
+.shape-box {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    max-width: 500px;
+    height: 430px;
+    margin: 30px 10px 30px;
+    overflow: hidden;
+    width: 23.333%;
+}
+
+.shape-box_half {
+    overflow: hidden;
+    text-align: left;
+}
+
+.shape-box_half:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: skewY(53.5deg);
+    transform-origin: top left;
+    transition: \transform .4s;
+    background: #fff;
+    z-index: 1;
+}
+
+.shape-box>img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.bg-black {
+    background-color: #000;
+}
+
+.shape-box_half figcaption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 30px 30px;
+    transition: \transform .4s;
+    transform: translateY(100%);
+    z-index: 3;
+}
+
+.shape-box_half figcaption .show-cont {
+    position: absolute;
+    bottom: calc(100% + 30px);
+    left: 30px;
+    right: 30px;
+    transition: bottom .4s;
+}
+
+.card-no {
+    font-size: 36px;
+    color: #ffc107;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.card-main-title {
+    margin-top: 8px;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #292b2c;
+}
+
+.card-content {
+    color: #9f9f9f;
+    margin-top: 20px;
+    line-height: 22px;
+    font-size: 15px;
+}
+
+.shape-box_half>.after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fdd744;
+    opacity: 0;
+    transition: opacity .4s;
+}
+
+/*On hover*/
+.shape-box_half:hover:before {
+    transform: skewY(20deg);
+}
+
+.shape-box_half:hover figcaption {
+    transform: translateY(0);
+}
+
+.shape-box_half:hover figcaption .show-cont {
+    bottom: 100%;
+}
+
+.shape-box_half:hover>.after {
+    opacity: 1;
 }

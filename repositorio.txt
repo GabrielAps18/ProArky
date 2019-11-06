@@ -1,0 +1,131 @@
+  <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" style="padding: 10vh 15vw;" uk-grid>
+    <div>
+      <div class="uk-card uk-card-primary uk-card-body">
+        <h3 class="uk-card-title">NUESTRA MISIÓN</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+    </div>
+    <div>
+      <div class="uk-card uk-card-primary uk-card-body">
+        <h3 class="uk-card-title">NUESTRA VISIÓN</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+    </div>
+    <div>
+      <div class="uk-card uk-card-primary uk-card-body">
+        <h3 class="uk-card-title">¿POR QUÉ ELEGIRNOS?</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+    <div class="container">
+      <div id="pre">
+        Previous
+      </div>
+      <div class="main">
+        <div class="side1">
+          <div class="uk-card uk-card-default">
+            <div class="uk-card-media-top">
+              <img src="css/imagenes/3.jpg" alt="">
+            </div>
+            <div class="uk-card-body">
+              <h3 class="uk-card-title">¿POR QUÉ ELEGIRNOS?</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+          </div>
+        </div>
+        <div class="side2">
+          <div class="uk-card uk-card-default">
+            <div class="uk-card-media-top">
+              <img src="css/imagenes/2.jpg" alt="">
+            </div>
+            <div class="uk-card-body">
+              <h3 class="uk-card-title">NUESTRA VISIÓN</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+          </div>
+        </div>
+        <div class="side3">
+          <div class="uk-card uk-card-default">
+            <div class="uk-card-media-top">
+              <img src="css/imagenes/1.jpg" alt="">
+            </div>
+            <div class="uk-card-body">
+              <h3 class="uk-card-title">NUESTRA MISIÓN</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="next">
+        Next
+      </div>
+    </div>
+
+
+
+
+
+    
+    <div class="container">
+      <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="autoplay: true">
+
+        <ul class="uk-slider-items uk-grid">
+          <li class="uk-width-3-4">
+            <div class="uk-panel">
+              <div class="uk-card uk-card-default uk-card-body">
+                <h3 class="uk-card-title">Default</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+              <div class="uk-position-center uk-panel">
+                <h1>1</h1>
+              </div>
+            </div>
+          </li>
+          <li class="uk-width-3-4">
+            <div class="uk-panel">
+              <div class="uk-card uk-card-default">
+                <div class="uk-card-media-top">
+                  <img src="css/imagenes/1.jpg" alt="">
+                </div>
+                <div class="uk-card-body">
+                  <h3 class="uk-card-title">NUESTRA VISIÓN</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+              </div>
+              <div class="uk-position-center uk-panel">
+                <h1>2</h1>
+              </div>
+            </div>
+          </li>
+          <li class="uk-width-3-4">
+            <div class="uk-panel">
+              <div class="uk-card uk-card-default">
+                <div class="uk-card-media-top">
+                  <img src="css/imagenes/3.jpg" alt="">
+                </div>
+                <div class="uk-card-body">
+                  <h3 class="uk-card-title">¿POR QUÉ ELEGIRNOS?</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+              </div>
+              <div class="uk-position-center uk-panel">
+                <h1>3</h1>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
+          uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+          uk-slider-item="next"></a>
+
+      </div>
+
+    </div>
