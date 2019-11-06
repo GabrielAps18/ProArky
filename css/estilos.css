@@ -113,7 +113,7 @@ color: #424949;
 
 .box-100x70{
   width: 100vw;
-  margin: 20vh 0 20vh 0;
+  margin: 20vh 0;
 }
  .cards{
    padding-top: 0%;
@@ -127,4 +127,8 @@ color: #424949;
 .cards > .uk-card{
   background-color: none;
   border: 1px solid #505050;
+}
+
+.servicios{
+  padding: 0 15%;
 }
