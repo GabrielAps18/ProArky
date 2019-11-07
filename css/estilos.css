@@ -537,14 +537,14 @@ textarea.contact-form-text {
 
 .box .content {
   position: absolute;
-  bottom: 20px;
-  left: 10%;
-  width: 80%;
-  height: 60px;
+  bottom: 0px;
+  left: 0%;
+  width: 0%;
+  height: 0%;
   background: #fff;
   transition: 0.5s;
   overflow: hidden;
-  padding: 15px;
+  padding: 0px;
 
   box-sizing: border-box;
 
