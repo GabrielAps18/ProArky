@@ -499,7 +499,9 @@ textarea.contact-form-text {
 }
 
 
-
+.box > .content > .card-content {
+  color: #505050;
+}
 .box {
   position: relative;
   width: 272px;
