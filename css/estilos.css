@@ -208,6 +208,7 @@ body {
 }
 .service:hover i{
   filter: invert(0.4) sepia(1) hue-rotate(370deg) saturate(10000%);
+  transition: 1s;
 }
 
 .service h2 {
