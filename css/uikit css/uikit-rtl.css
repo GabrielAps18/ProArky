@@ -6907,7 +6907,7 @@ ul.uk-nav-sub {
   }
   /* Thirds */
   .uk-width-1-3\@m {
-    width: calc(100% * 1 / 3.001);
+    width: calc(100% * 1 / 2.2);
   }
   .uk-width-2-3\@m {
     width: calc(100% * 2 / 3.001);
