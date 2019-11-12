@@ -1,4 +1,4 @@
-
+/*------------------------------- BASICS -----------------------------*/
 *,
 html {
   padding: 0;
@@ -9,6 +9,28 @@ body {
   scroll-behavior: smooth;
 }
 
+.scroll {
+  width: 100% ;
+  height: 100%;
+  overflow-x: hidden;
+  float: left;
+  position: absolute;
+}
+.scroll1::-webkit-scrollbar {
+  width: 10px;
+}
+
+.scroll1::-webkit-scrollbar-track {
+  background: #ddd;
+}
+
+.scroll1::-webkit-scrollbar-thumb {
+  background: #666;
+}
+
+/*------------------------------------------------------------*/
+
+/*----------------------------- INICIO -------------------------------*/
 #inicio {
   background: url(imagenes/b3.jpg) no-repeat;
   background-position: center;
@@ -113,35 +135,28 @@ body {
   }
 }
 
-.aboutustittle {
-  font-size: 25px;
-  font-family: 'Roboto', sans-serif;
-  color: #424949;
-}
+/*------------------------------------------------------------*/
 
-.primerparrafo {
-  font-size: 15px;
-  color: #424949;
-  font-family: 'Raleway', sans-serif;
-}
-
-.cards {
-  padding-top: 0%;
-  margin-top: 0%;
+/*----------------------------- ABOUT US-------------------------------*/
+.aboutus {
+  background: url(imagenes/bg-image-1.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
   width: 100%;
-  padding-bottom: 5vh;
+  overflow: hidden;
+  position: relative;
+  background-repeat: no-repeat;
 }
 
-
-.cards>.uk-card {
-  background-color: none;
-  border: 1px solid #505050;
+.about-us-box{
+  width: 100%;
+  height: 90vh;
 }
 
-.padding {
-  padding: 0 15%;
-}
+/*------------------------------------------------------------*/
 
+/*--------------------------- FILTRO ---------------------------------*/
 .filtro>.uk-subnav-pill>.uk-active>a {
   background-color: white;
   color: #f8b500;
@@ -156,25 +171,102 @@ body {
   background-color: #303030;
   color: #f8f8f8;
 }
-.scroll {
-  width: 100% ;
+
+
+.content h2{
+  text-transform: uppercase;
+}
+.box > .content > .card-content {
+  color: #9f9f9f;
+}
+.box {
+  position: relative;
+  width: 272px;
+  height: 227px;
+  background: #000;
+}
+
+
+.box .imgBx {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 100%;
-  overflow-x: hidden;
-  float: left;
+}
+
+
+
+.box .imgBx img {
   position: absolute;
-}
-.scroll1::-webkit-scrollbar {
-  width: 10px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
 }
 
-.scroll1::-webkit-scrollbar-track {
-  background: #ddd;
+
+
+.box:hover .imgBx img {
+  opacity: 0;
 }
 
-.scroll1::-webkit-scrollbar-thumb {
-  background: #666;
+
+
+.box .content {
+  position: absolute;
+  bottom: 0px;
+  left: 0%;
+  width: 0%;
+  height: 0%;
+  background: #fff;
+  transition: 0.5s;
+  overflow: hidden;
+  padding: 0px;
+  box-sizing: border-box;
+
 }
-/*-----------servicios-----------------*/
+
+
+
+.box:hover .content {
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 30px;
+}
+
+
+
+.box .content h3 {
+  margin:0;
+  font-size: 20px;
+}
+
+
+
+.box .content p {
+  margin:10px;
+  padding: 0;
+  opacity: 0;
+  line-height: 1.2em;
+  transition: 0.5s;
+  text-align: justify;
+
+}
+
+
+
+.box:hover .content p {
+  opacity: 1;
+  transition-delay: 0.5s;
+}
+/*------------------------------------------------------------*/
+
+/*----------------------------- CARDS SERVICIOS -------------------------------*/
 
 
 .services {
@@ -200,7 +292,7 @@ body {
 }
 
 .service:hover {
-  /*background: #e3b04b;*/
+  background: #e3b04b17;
 }
 
 .service i {
@@ -209,7 +301,7 @@ body {
 }
 .service:hover i{
   filter: invert(0.4) sepia(1) hue-rotate(370deg) saturate(10000%);
-  transition: 1s;
+  transition: 0.1s;
 }
 
 .service h2 {
@@ -239,17 +331,9 @@ body {
 }
 
 
-/*----------------------------------*/
+/*------------------------------------------------------------*/
 
-.container {
-  position: relative;
-  width: 60vw;
-  height: 70vh;
-  margin: auto;
-}
-
-/*-----------------------------------*/
-
+/*---------------------------- CARDS VALORES--------------------------------*/
 .shape-box {
   display: inline-block;
   position: relative;
@@ -359,6 +443,15 @@ body {
 .shape-box_half:hover>.after {
   opacity: 1;
 }
+/*------------------------------------------------------------*/
+
+/*-----------------------------CONTÁCTANOS-------------------------------*/
+.container {
+  position: relative;
+  width: 60vw;
+  height: 70vh;
+  margin: auto;
+}
 
 .contacto {
   background: url(imagenes/office.jpg) no-repeat;
@@ -427,176 +520,19 @@ textarea.contact-form-text {
 .contact-form-btn:hover {
   background: #2980b9;
 }
-<<<<<<< Updated upstream
 
+/*----------------------------- MAPA -------------------------------*/
 
-/*------------------------------*/
-
-
-
-#ubicanos {
-  height: 100vh;
-  width: 100%;
+.imagen-200{
+  background-image: url(imagenes/b4.jpg);
   overflow: hidden;
   position: relative;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-color: #f8f8f8;
-}
-
-.ubicacion {
-  display: flex;
-}
-
-.mapa {
-  width: 50vw;
-  height: 80vh;
-  top: 100px;
-  background: rgba(255, 255, 255, 0.781);
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 20px;
-}
-
-.ubicaciontext {
-  width: 40vw;
-  top: 100px;
-  background: rgba(255, 255, 255, 0.781);
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-left: 40px;
-  color: #292929;
-  padding: 50px;
-}
-<<<<<<< HEAD
-
-
-/**/
-
-
-
-.containerr {
-
-  max-width: 1000px;
-
-  display: flex;
-
-  margin: 50px 0;
-
-  flex-wrap: wrap;
-
-  justify-content: space-around;
-
-}
-.content h2{
-  text-transform: uppercase;
-}
-.box > .content > .card-content {
-  color: #9f9f9f;
-}
-.box {
-  position: relative;
-  width: 272px;
-  height: 227px;
-  background: #000;
-}
-
-
-.box .imgBx {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-
-
-.box .imgBx img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: 0.5s;
-}
-
-
-
-.box:hover .imgBx img {
-  opacity: 0;
-}
-
-
-
-.box .content {
-  position: absolute;
-  bottom: 0px;
-  left: 0%;
-  width: 0%;
-  height: 0%;
-  background: #fff;
-  transition: 0.5s;
-  overflow: hidden;
-  padding: 0px;
-  box-sizing: border-box;
-
-}
-
-
-
-.box:hover .content {
-  width: 100%;
-  height: 100%;
-  bottom: 0;
-  left: 0;
-  padding: 30px;
-}
-
-
-
-.box .content h3 {
-  margin:0;
-  font-size: 20px;
-}
-
-
-
-.box .content p {
-  margin:10px;
-  padding: 0;
-  opacity: 0;
-  line-height: 1.2em;
-  transition: 0.5s;
-  text-align: justify;
-
-}
-
-
-
-.box:hover .content p {
-  opacity: 1;
-  transition-delay: 0.5s;
-}
-
-
-.aboutus {
-  background: url(imagenes/bg-image-1.jpg) no-repeat;
-  background-position: center;
   background-size: cover;
-  height: 100%;
   width: 100%;
-  overflow: hidden;
-  position: relative;
-  background-repeat: no-repeat;
+  height: 250px;
 }
+/*------------------------------------------------------------*/
 
-.about-us-box{
-  width: 100%;
-  height: 90vh;
-}
