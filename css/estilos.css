@@ -10,6 +10,8 @@ body
     overflow-x: hidden;
 
     scroll-behavior: smooth;
+
+    background-color: #ffffff;
 }
 
 .scroll
@@ -555,7 +557,7 @@ body
     transition: opacity .4s;
 
     opacity: 0;
-    background: #fdd744;
+    background: #f8b500;
 }
 
 /*On hover*/
