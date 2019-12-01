@@ -683,20 +683,23 @@ textarea.contact-form-text
 }
 
 /*----------------------------- MAPA -------------------------------*/
+.mapdiv {
+  background: #444;
+  height: 500px;
+  width: 35%;
+}
+.mapdiv > h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  color: #fafafa;
+}
+.mapdiv > p {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 17px;
+  color: #fafafa;
+  line-height: 150%;
+  display: inline;
+}
 
-.imagen-200
-{
-    position: relative;
-
-    overflow: hidden;
-
-    width: 100%;
-    height: 300px;
-
-    background-color: #f8f8f8;
-    background-image: url(imagenes/wall2.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
 }
 /*------------------------------------------------------------*/
