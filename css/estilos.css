@@ -12,6 +12,8 @@ body
     scroll-behavior: smooth;
 
     background-color: #ffffff;
+
+    display: block;
 }
 
 .scroll
@@ -90,7 +92,6 @@ body
 .titulo
 {
     position: relative;
-
     padding-left: 50px;
 }
 
@@ -157,32 +158,6 @@ body
     color: #f8b500;
 }
 
-@media screen and (min-width: 320px) and (max-width: 840px)
-{
-    .titulo > h1
-    {
-        font-size: 6em;
-    }
-
-    .titulo > span
-    {
-        font-size: 1em;
-    }
-}
-
-@media screen and (min-width: 320px) and (max-width: 840px)
-{
-    .nav-logo
-    {
-        font-size: 1em;
-    }
-
-    .navbar > li
-    {
-        font-size: 1em;
-    }
-}
-
 /*------------------------------------------------------------*/
 
 /*----------------------------- ABOUT US-------------------------------*/
@@ -242,8 +217,8 @@ body
 {
     position: relative;
 
-    width: 272px;
-    height: 227px;
+    width: 350px;
+    height: 350px;
 
     background: #000;
 }
@@ -340,7 +315,7 @@ body
 
 
 
-.box:hover .content p
+.box:hover .content p, h3
 {
     transition-delay: .5s;
 
@@ -378,6 +353,8 @@ body
 
     cursor: pointer;
     transition: .4s;
+
+    border: 1px solid transparent;
 }
 
 .service:hover
@@ -417,23 +394,6 @@ body
 
     color: #9f9f9f;
 }
-
-@media screen and (max-width: 800px)
-{
-    .service
-    {
-        width: 50%;
-    }
-}
-
-@media screen and (max-width: 500px)
-{
-    .service
-    {
-        width: 100%;
-    }
-}
-
 
 /*------------------------------------------------------------*/
 
@@ -703,3 +663,59 @@ textarea.contact-form-text
 
 }
 /*------------------------------------------------------------*/
+
+/*--------------------------- RESPONSIVE ---------------------------*/
+
+
+@media screen and (max-width: 700px)
+{
+    .uk-navbar-container > .uk-navbar-right, .uk-logo
+    {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 800px)
+{
+    .service
+    {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+    .titulo h1
+    {
+        font-size: 50px;
+    }
+    .titulo span
+    {
+        font-size: 15px;
+    }
+    .titulo p
+    {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 700px)
+{
+    .titulo p
+    {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 800px)
+{
+    .box
+    {
+        width: 250px;
+        height: 250px;
+    }
+    .filtrocards li
+    {
+        display: block;
+    }
+}

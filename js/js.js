@@ -2,19 +2,19 @@ $(document).ready(function() {
 	$(window).scroll(function() {
   	if($(document).scrollTop() > 500) {
     	$('.uk-navbar').css({
-        'background-color': '#303030',
+        'background-color': '#ffff',
         'transition': 'all ease .5s',
-        'height': '80px'
+        'height': '80px',
+        'border-bottom': '0.5px solid #f1f1f1'
 			})
 			$('.textcolornav').css({
-				'color': '#fafafa'
+				'color': '#303030'
 			});
     }
     else {
     $('.uk-navbar').css({
       'background-color': 'transparent',
       'transition': 'all ease 0s',
-      'height': '80px'
     })
 		$('.textcolornav').css({
 			'color': '#f8f8f8'
